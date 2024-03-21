@@ -1,0 +1,113 @@
+/* Menambahkan font dari google font */
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
+
+body {
+  background: #010101; /* Mengganti Warna Background */
+  font-family: "Oxanium", sans-serif; /* Mengganti font halaman */
+}
+
+/* Membuat div ui untuk layouting bagian scoreboard */
+.ui {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Membuat div wrap untuk membuat area game di tengah layar */
+.wrap {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background-color: #000;
+  border: #fff solid 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px #fff;
+  border-radius: 20px;
+}
+
+/* Menambah garis tengah */
+.border {
+  position: absolute;
+  height: 400px;
+  width: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #fff;
+}
+
+.paddle {
+  width: 10px;
+  height: 100px;
+  position: absolute;
+  /* Membuat paddle menjadi Rounded */
+  border-radius: 5px;
+}
+
+/* Mengubah warna paddle kiri dan kanan serta memberikan efek glow dengan shadow */
+#leftPaddle {
+  left: 10px;
+  background-color: #ff114f;
+  box-shadow: 0px 0px 10px #ff114f;
+}
+#rightPaddle {
+  right: 10px;
+  background-color: #7904eb;
+  box-shadow: 0px 0px 10px #7904eb;
+}
+
+.ball {
+  width: 10px;
+  height: 10px;
+  background-color: #efff11;
+  position: absolute;
+  /* membuat mola menjadi lingkaran dari sebelumnya berebentuk kotak */
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #efff11;
+}
+
+/* Mengatur tampilan tombol Start Game  */
+.startbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  filter: drop-shadow(1px 1px 10px #fff);
+}
+
+.score {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+/* Membuat kelas untuk dipakai di text scoreboard */
+.red {
+  color: #ff114f;
+  text-shadow: 0px 0px 10px #ff114f;
+}
+.blue {
+  color: #7904eb;
+  text-shadow: 0px 0px 10px #7904eb;
+}
+
+/* Membuat class hidden untuk di toggle di script ketika tombol game start ditekan */
+.hidden {
+  display: none;
+}

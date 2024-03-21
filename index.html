@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game Pong</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Membuat div ui -->
+    <div class="ui">
+      <!-- Membuat tombol Start Game -->
+      <button class="startbtn" id="startBtn">Start Game!</button>
+      <div class="score hidden" id="scoreboard">
+        <!-- Memberikan class red dan blue -->
+        <span class="red"
+          >Player 1: <br />
+          <span id="score1">0</span></span
+        >
+        <span class="blue"
+          >Player 2: <br />
+          <span id="score2">0</span></span
+        >
+      </div>
+    </div>
+
+    <!-- Membuat div wrap -->
+    <div class="wrap">
+      <div class="game-container">
+        <div class="paddle" id="leftPaddle"></div>
+        <div class="border"></div>
+        <div class="paddle" id="rightPaddle"></div>
+        <div class="ball hidden" id="ball"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
